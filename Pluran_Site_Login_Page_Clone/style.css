@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@100&display=swap');
+
+*{
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background-color: #8f3a5b;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.right {
+    flex: 1;
+   
+}
+
+
+
+/* Sign In */
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.signin form {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+
+.signin .logo {
+    margin-bottom: 8vh;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.signin label {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.signin .text-input {
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #8f3a5b;
+    border: 1px solid darkblue;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+
+/* Button */
+.primary-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: large;
+    background-color: orange;
+    color: black;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.primary-btn:hover {
+    color: orange;
+    background-color: black;
+}
+
+.sec-btn {
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: large;
+    background-color: none;
+    color: black;
+    border: 1px solid #ffff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sec-btn:hover {
+    color: whitesmoke;
+    border-color: black;
+}
+
+.signin .sec-btn,
+.or,
+.links {
+    width: 70%;
+}
+
+.signin .links a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.signin .or {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin .or span {
+    padding: 0 0.8rem;
+}
+
+.signin .or .bar {
+    flex: auto;
+    border: none;
+    height: 1px;
+    background-color: antiquewhite;
+}
+
+/* Showcase section */
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('./img2.webp') no-repeat center center / cover;
+    height: 100vh;
+    background-color: none;
+}
+
+.showcase .showcase-text {
+    font-size: 3rem;
+    width: 100%;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.showcase .showcase-content {
+    margin-top: 200px;
+    width: 100%;
+    height: 50vh;
+}
+
+
+/* footer */
+.main-footer {
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 80%;
+    padding-top: 5rem;
+}
+
+.main-footer p {
+    color: white;
+}
+
+.main-footer a {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media(min-width: 1200px){
+    .left {
+        flex: 4;
+    }
+    .right {
+        flex: 6;
+    }
+}
+
+@media(max-width: 768px){
+     {
+        overflow: scroll;
+    }
+
+    .right{
+        display: none;
+    }
+    .left {
+        justify-content: start;
+    }
+    .left .logo {
+        margin-top: 8vh;
+    }
+}
